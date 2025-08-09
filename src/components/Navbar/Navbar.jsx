@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Fimenu, FiX} from 'react-icons/fi';
+import {FiMenu, FiX} from 'react-icons/fi';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const Navbar = () => {
@@ -38,7 +38,8 @@ const menuItem = [
 
   return (
     <div>
-      <h1>Navbar</h1>
+      <nav className='bg-white'>
+      </nav>
     </div>
   )
 }
