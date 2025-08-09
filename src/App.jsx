@@ -1,19 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-
-
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Skills from './components/Skills/Skills';
+import Experience from './components/Experience/Experience';
+import Work from './components/Work/Work';
+import Education from './components/Education/Education';
+import Footer from './components/Footer/Footer';
 function App() {
-
-
   return (
-    <>
-      <h1 className='text-red-700 font-bold'>Hello Shoaib </h1>
-      <h1 className='text-red-700 font-bold'>Hello Shoaib </h1>
-      <h1 className='text-red-700 font-bold'>Hello Shoaib </h1>
-      <h1 className='text-red-700 font-bold'>Hello Shoaib </h1>
-      <h1 className='text-red-700 font-bold'>Hello Shoaib </h1>
-    </>
+    <div className="bg-[#050414] text-white">
+     <div className='absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [-webkit-mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
+      <div className='relative pt-20'>
+        <Navbar/>
+        <About/>
+        <Skills/>
+        <Experience/>
+        <Work/>
+        <Education/>
+        <Contact/>
+        <Footer/>
+     </div>
+    </div>
   )
 }
 
