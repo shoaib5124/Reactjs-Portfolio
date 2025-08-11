@@ -14,12 +14,12 @@ function App() {
       <div className='relative pt-20'>
         <Navbar/>
         <About/>
-        <Skills/>
-        <Experience/>
-        <Work/>
-        <Education/>
-        <Contact/>
-        <Footer/>
+        {/* <Skills/> */}
+        {/* <Experience/> */}
+        {/* <Work/> */}
+        {/* <Education/> */}
+        {/* <Contact/> */}
+        {/* <Footer/> */}
      </div>
     </div>
   )
