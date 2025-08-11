@@ -2,9 +2,22 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-       <h1>About</h1>
-    </div>
+    <section
+    id='about'
+    >
+      <div>
+        {/* Left text side */}
+        <div>
+          {/* Greeting */}
+          <h1>Hi, I am</h1>
+          {/* Name */}
+          <h1>Shoaib Ul Hassan</h1>
+          {/* Skills headig with typing effects */}
+        </div>
+        <div></div>
+      </div>
+       
+    </section>
   )
 }
 
