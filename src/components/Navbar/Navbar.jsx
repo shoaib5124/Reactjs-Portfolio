@@ -39,7 +39,7 @@ const menuItems = [
   return (
     <div>
 
-      <nav className={`top-0 flex fixed z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] 
+      <nav className={`top-0 flex fixed w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] 
         ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md":"bg-transparent"}`}>
         
        
