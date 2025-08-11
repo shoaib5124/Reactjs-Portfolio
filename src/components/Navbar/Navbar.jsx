@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-
+import Container from '../container';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,19 +38,12 @@ const Navbar = () => {
 
   return (
     <div>
-
-<<<<<<< HEAD
-      <nav className={`top-0 flex fixed w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] 
-        ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md":"bg-transparent"}`}>
         
-       
-        <div className='text-white flex py-5 justify-between items-center'>
-=======
       <nav className={`top-0 flex w-full fixed z-50 transition duration-300  ] 
         ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
->>>>>>> 2012c68fa8d29081c532d64ca8402d6e00079ca4
 
-        <div className='text-white  px-10 w-full max-w-7xl md:mx-auto flex py-5 justify-between items-center'>
+
+        <Container className='text-white md:mx-auto flex py-5 justify-between items-center'>
 
           {/* Logo */}
           <div className='text-xl md:text-2xl lg:text-3xl font-semibold lg:font-bold'>
@@ -96,7 +89,7 @@ const Navbar = () => {
               <FaLinkedin size={24} />
             </a>
           </div>
-        </div>
+        </Container>
 
         {/* Mobile menu icons */}
         <div className='md:hidden'>
