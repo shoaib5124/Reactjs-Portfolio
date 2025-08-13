@@ -1,6 +1,6 @@
 import React from 'react';
 import {Typewriter}from 'react-simple-typewriter';
-import profileImage from '../../assets/assets/profile2.png';
+import profileImage from '../../assets/profile2.png';
 import Container from '../container';
 import {Tilt} from 'react-tilt';
 const About = () => {
