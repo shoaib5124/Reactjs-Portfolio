@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Container from '../container';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,26 +24,25 @@ const Navbar = () => {
     setIsOpen(false);
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth  ' })
+      section.scrollIntoView({ behavior: 'smooth' })
     }
   }
   // menuItem to run loop 
   const menuItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "work", label: "Projects" },
     { id: "experience", label: "Expereince" },
+    { id: "work", label: "Projects" },
     { id: "education", label: "Education" }
   ]
 
   return (
     <div>
-        
+
       <nav className={`top-0 flex w-full fixed z-50 transition duration-300  ] 
         ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
 
-
-        <Container className='text-white md:mx-auto flex py-5 justify-between items-center'>
+        <div className='text-white  px-10 w-full max-w-7xl md:mx-auto flex py-5 justify-between items-center'>
 
           {/* Logo */}
           <div className='text-xl md:text-2xl lg:text-3xl font-semibold lg:font-bold'>
@@ -55,7 +54,7 @@ const Navbar = () => {
           </div>
 
           {/* Deskstop Menu */}
-          <ul className='hidden md:flex md:text-base lg:text-lg font-medium space-x-8 text-gray-300'>
+          <ul className='hidden md:flex md:text-base lg:text-2xl font-medium space-x-8 text-gray-300'>
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -78,7 +77,7 @@ const Navbar = () => {
               rel='noopener noreferer'
               className='text-gray-300 hover:text-[#8245ec]'
             >
-              <FaGithub size={24} />
+              <FaGithub size={26} />
             </a>
             <a
               href='https://www.linkedin.com/in/shoaib-ul-hassan-070ab333b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
@@ -86,10 +85,10 @@ const Navbar = () => {
               rel='noopener noreferer'
               className='text-gray-300 hover:text-[#8245ec]'
             >
-              <FaLinkedin size={24} />
+              <FaLinkedin size={26} />
             </a>
           </div>
-        </Container>
+        </div>
 
         {/* Mobile menu icons */}
         <div className='md:hidden'>
@@ -105,7 +104,7 @@ const Navbar = () => {
               />
             )}{/* Mobile Menu Items */}
               {isOpen && (
-                <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+                <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 mbackdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
                   <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
                     {menuItems.map((item) => (
                       <li

@@ -6,10 +6,10 @@ const Skills = () => {
   return (
     <section
     id='skills'
-    className='font-sans mt-20 bg-skills-gradient'
+    className='font-sans pt-24 pb-32 bg-skills-gradient clip-path-custom '
     >
       <Container>
-       <div className='text-center'>
+       <div className='text-center '>
           <h1 
           className='text-xl font-bold sm:text-2xl md:text-3xl lg:text-5xl'
           >

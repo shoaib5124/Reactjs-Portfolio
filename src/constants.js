@@ -1,5 +1,5 @@
 // Skills Section Logo's
-import htmlLogo from './assets/tech_logo/html.png';
+import htmlLogo from './assets/tech_logo/html.png';  
 import cssLogo from './assets/tech_logo/css.png';
 import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
@@ -34,9 +34,9 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
-import agcLogo from './assets/company_logo/agc_logo.png';
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import reactLogo from './assets/experience_logo/react.png';
+import codeLogo from './assets/experience_logo/coding.png';
+import growthLogo from './assets/experience_logo/growth.png';
 
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
@@ -112,62 +112,64 @@ export const SkillsInfo = [
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
-      date: "April 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    {
-      id: 1,
-      img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 2,
-      img: newtonschoolLogo,
-      role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
-      desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-      skills: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap",
-        "Figma",
-        "Material UI",
-      ],
-    },
-  ];
-  
+export const experiences = [  
+  {  
+    id: 0,  
+    img: reactLogo,  
+    role: "Frontend Developer (React.js Projects)",  
+    company: "Personal Projects",  
+    date: "2023 - Present",  
+    points: [  
+      "Built multiple responsive and dynamic web applications using React.js.",  
+      "Worked with state management (hooks, props, context) to create reusable components.",  
+      "Integrated APIs and third-party libraries like Swiper.js for smooth user experience.",  
+      "Designed and deployed a personal portfolio to showcase development expertise.",  
+    ],  
+    skills: [  
+      "React.js",  
+      "JavaScript",  
+      "Tailwind CSS",  
+      "Bootstrap",  
+      "Swiper.js",  
+    ],  
+  },  
+  {  
+    id: 1,  
+    img: codeLogo,  
+    role: "Problem Solver & Backend Learner",  
+    company: "Self Learning",  
+    date: "2024",  
+    points: [  
+      "Created a Bug Tracker CLI app with Python (OOP, decorators, logging).",  
+      "Upgraded project to API level with FastAPI, exploring real-world backend workflows.",  
+      "Practiced building CRUD operations and authentication to understand fullstack flow.",  
+    ],  
+    skills: [  
+      "Python",  
+      "FastAPI",  
+      "REST API",  
+      "OOP",  
+    ],  
+  },  
+  {  
+    id: 2,  
+    img: growthLogo,  
+    role: "Continuous Learner & Future Builder",  
+    company: "Self-Paced Growth",  
+    date: "Ongoing",  
+    points: [  
+      "Currently deepening expertise in React.js while exploring advanced UI/UX design.",  
+      "Learning AI, NLP, and API integration to expand into modern web + AI solutions.",  
+      "Motivated self-learner with a strong hunger for knowledge and building impactful projects.",  
+    ],  
+    skills: [  
+      "React.js (Advanced)",  
+      "Next.js",  
+      "API Integration",  
+      "AI (Learning)",  
+    ],  
+  },  
+];
   export const education = [
     {
       id: 0,
@@ -298,7 +300,4 @@ export const SkillsInfo = [
   //     github: "https://github.com/codingmastr/Image-Background-Remover",
   //     webapp: "https://removeyourbg.netlify.app/",
   //   },
-
- // ];  
-
- 
+  // ];  
