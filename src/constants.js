@@ -174,38 +174,44 @@ export const experiences = [
     {
       id: 0,
       img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
+      school: "Bachelor of Science in English (Ongoing) University Name | Semester 6",
+      points: [
+
+       "Developed critical thinking, communication, and analytical skills that strengthen problem-solving in tech projects.",
+
+       "Gained strong expertise in research, documentation, and presentation, useful in client communication and technical writing.",
+
+        "Balanced degree with self-taught Computer Science and Software Development, showing discipline and adaptability."
+      ],
+      degree: " Formal Education (Degree)",
     },
     {
-      id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
+       id: 0,
+      img: glaLogo,
+      school: "Full-Stack & AI Development (Self-Taught & Project-Based Learning)",
+      points: [
+
+       "Mastered Frontend: HTML, CSS, Sass, Tailwind CSS, Bootstrap, JavaScript, React.js.",
+       "Mastered Backend: Node.js, Express.js, FastAPI (Python).",
+        "Databases: MongoDB.",
+        "AI Tools: LLM integration & API development.",
+        "Built real-world projects (bug tracker, library system, chatbot, portfolio apps) applying these technologies.",
+      ],
+      degree: " Technical Education (Self-Learning & Bootcamp Style)",
     },
+   
     {
-      id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
+       id: 0,
+      img: glaLogo,
+      school: "Ongoing Professional Growth",
+      points: [
+
+       "Expanding expertise in Python for AI, APIs, and Data Science.",
+       "Exploring React Three Fiber (3D), FastAPI, and Generative AI integrations.",
+       "Learning industry practices: Version control (GitHub), API design, project collaboration.",
+       "Demonstrates lifelong learning mindset, key to thriving in fast-paced tech.",
+        ],
+      degree: "Continuous Learning & Certifications",
     },
   ];
   

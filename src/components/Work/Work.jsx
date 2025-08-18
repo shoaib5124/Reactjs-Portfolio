@@ -78,14 +78,14 @@ const Work = () => {
           <div
            className='fixed inset-0 bg-black z-[999]  bg-opacity-90 flex justify-center items-center'
           >
-          <div className='w-[90%] h-[100%] max-w-3xl rounded-2xl  bg-gray-900 relative  p-4'>
+          <div className='w-[90%] max-h-[100vh] max-w-3xl rounded-2xl  bg-gray-900 relative   p-2'>
             <div className=' btn-close-white absolute top-2 right-2 '>
               <button
                onClick={handleCloseModel}
                className='text-white  text-3xl md:text-4xl lg:text-5xl font-bold'
               >&times;</button>
             </div>
-            <div className='flex flex-col mt-14 gap-y-10'>
+            <div className='flex flex-col mt-14 gap-y-5'>
               <div
               className='w-full flex justify-center '
               >
@@ -115,10 +115,10 @@ const Work = () => {
               {/* Github and Live demo links */}
               <div className='flex text-white gap-x-5 font-bold text-2xl'>
                  <a
-                 className='bg-[#251f38] w-1/2 rounded-3xl text-center py-2'
+                 className='bg-[#251f38] w-1/2 rounded-3xl text-center py-2 cursor-pointer'
                  >View Code</a>
                  <a
-                 className='bg-purple-500 w-1/2 rounded-3xl text-center py-2 '
+                 className='bg-purple-500 w-1/2 rounded-3xl text-center py-2 cursor-pointer'
                  > Live Demo</a>
               </div>
             </div>
