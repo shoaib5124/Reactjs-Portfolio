@@ -15,7 +15,7 @@ const Skills = () => {
           >
             SKILLS
           </h1>
-          <div className='w-28 h-2 bg-[#8245ec] mx-auto mt-2'></div>
+          <div className='w-[10%] h-1 md:h-2 bg-[#8245ec] mx-auto mt-2'></div>
           <p 
            className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 my-8'
           >

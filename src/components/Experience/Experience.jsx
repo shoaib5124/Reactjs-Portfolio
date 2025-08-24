@@ -46,7 +46,7 @@ const Experience = () => {
   return (      
     <section
     id='experience'
-    className='pt-24 pb-32 bg-skills-gradient clip-path-custom-2'
+    className='md:pt-24 pb-36 bg-skills-gradient clip-path-custom-2'
     >
       <Container>
          <div className='text-center'>
@@ -55,7 +55,7 @@ const Experience = () => {
           >
             EXPERIENCE
           </h1>
-          <div className='w-36 h-2 bg-[#8245ec] mx-auto mt-2'></div>
+          <div className='w-[16%] h-1 md:h-2 bg-[#8245ec] mx-auto mt-2'></div>
           <p 
            className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 my-8'
           >

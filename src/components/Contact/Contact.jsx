@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className=" py-24 "
+      className=" md:py-24 "
     >
      <Container className="flex flex-col justify-center items-center">
         {/* Toast Container */}
@@ -58,8 +58,8 @@ const Contact = () => {
 
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white">CONTACT</h2>
-          <div className="w-32 h-2 bg-purple-500 mx-auto mt-4"></div>
+          <h2 className="text-xl font-bold sm:text-2xl md:text-3xl lg:text-5xl">CONTACT</h2>
+          <div className="w-[16%] h-1 md:h-2 bg-purple-500 mx-auto mt-2"></div>
           <p className="text-gray-400 mt-4 text-base sm:text-lg md:text-lg lg:text-2xl font-semibold">
             I’d love to hear from you—reach out for any opportunities or questions!
           </p>

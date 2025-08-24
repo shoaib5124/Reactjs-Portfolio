@@ -19,7 +19,7 @@ const Work = () => {
     <>
       <section
       id='work'
-      className='bg-skills-gradient clip-path-custom pt-24 pb-40  z-[999]'
+      className='bg-skills-gradient clip-path-custom md:pt-24 pb-40  z-[999]'
       >
           <Container>
             <div className='text-center '>
@@ -28,7 +28,7 @@ const Work = () => {
                   >
                     PROJECTS
                   </h1>
-                  <div className='w-36 h-2 bg-[#8245ec] mx-auto mt-2'></div>
+                  <div className='w-[13%] h-1 md:h-2 bg-[#8245ec] mx-auto mt-2'></div>
                   <p 
                   className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 my-8'
                   >
@@ -113,11 +113,13 @@ const Work = () => {
               </div>
 
               {/* Github and Live demo links */}
-              <div className='flex text-white gap-x-5 font-bold text-2xl'>
+              <div className='flex text-white gap-x-5 font-bold text-xl md:text-2xl'>
                  <a
-                 className='bg-[#251f38] w-1/2 rounded-3xl text-center py-2 cursor-pointer'
+                 href={selectedProject.github}
+                 className='bg-[#251f38] w-1/2 rounded-3xl text-center py-1 md:py-2 cursor-pointer'
                  >View Code</a>
                  <a
+                 href={selectedProject.webapp}
                  className='bg-purple-500 w-1/2 rounded-3xl text-center py-2 cursor-pointer'
                  > Live Demo</a>
               </div>

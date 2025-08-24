@@ -14,10 +14,10 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className=" mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-purple-500">Shoaib Ul Hassan</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-500">Shoaib Ul Hassan</h2>
 
         {/* Navigation Links - Responsive */}
-        <nav className="flex flex-wrap justify-center sm:space-x-6 mt-4">
+        <nav className="flex flex-col md:flex-wrap justify-center sm:space-x-6 mt-4 text-xl">
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
@@ -26,6 +26,7 @@ const Footer = () => {
             { name: "Education", id: "education" },
             { name: "Contact Us", id: "Contact" },
           ].map((item, index) => (
+
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
