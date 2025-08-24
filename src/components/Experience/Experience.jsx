@@ -46,7 +46,7 @@ const Experience = () => {
   return (      
     <section
     id='experience'
-    className='py-24 pb-24 bg-skills-gradient clip-path-custom-2'
+    className='pt-24 pb-32 bg-skills-gradient clip-path-custom-2'
     >
       <Container>
          <div className='text-center'>
@@ -63,7 +63,7 @@ const Experience = () => {
            From front-end design to backend logic, each skill helps me craft engaging, reliable digital experiences.
           </p>
          </div>
-         <div className='mt-2 flex flex-col '>
+         <div className=' flex flex-col pt-10'>
           <VerticalTimeline>
             {experiences.map((experience,index)=>(
               <ExperienceCard key={index} experience=

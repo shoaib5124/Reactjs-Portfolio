@@ -3,26 +3,49 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSectionId, setSectionId] = useState("");
 
   //A function to trace the scrolling to change the Navbar background
+  // And change the color of links of the section which is vissible
   useEffect(() => {
+
     const handleScroll = () => {
+
       setIsScrolled(window.scrollY > 50)
+      
+      const sections = document.querySelectorAll("section");
+      let currenSection = "";
+      sections.forEach((section)=>{
+        // Section distance from the top of page
+        const sectionTop = section.offsetTop
+        const sectionHight = section.clientHeight
+        // Logic:Check if we are in inside this section
+        if(
+          window.scrollY >= sectionTop - sectionHight / 3 &&
+          window.screenY < sectionTop + sectionHight -sectionHight / 3
+        ){
+          currenSection = section.getAttribute("id")
+        }
+      })
+      setSectionId(currenSection)
     };
     window.addEventListener('scroll', handleScroll);
 
+
+
     return () =>
       window.removeEventListener('scroll', handleScroll)
+
   }, [])
 
   // Smooth scroll function
   const handleMenuItemClick = (sectionId) => {
-    setSectionId(sectionId);
     setIsOpen(false);
     const section = document.getElementById(sectionId);
+     setSectionId(section.id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' })
     }
@@ -33,7 +56,8 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Expereince" },
     { id: "work", label: "Projects" },
-    { id: "education", label: "Education" }
+    { id: "education", label: "Education" },
+    { id: "contact", label: "Contact Us" }
   ]
 
   return (

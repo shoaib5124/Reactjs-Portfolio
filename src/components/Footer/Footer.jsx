@@ -1,11 +1,67 @@
-import React from 'react'
+import React from "react";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaWhatsapp, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-  return (
-    <div>
-       <h1>Footer</h1>
-    </div>
-  )
-}
+  // Smooth scroll function
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-export default Footer
+  return (
+    <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+      <div className=" mx-auto text-center">
+        {/* Name / Logo */}
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-purple-500">Shoaib Ul Hassan</h2>
+
+        {/* Navigation Links - Responsive */}
+        <nav className="flex flex-wrap justify-center sm:space-x-6 mt-4">
+          {[
+            { name: "About", id: "about" },
+            { name: "Skills", id: "skills" },
+            { name: "Experience", id: "experience" },
+            { name: "Projects", id: "work" },
+            { name: "Education", id: "education" },
+            { name: "Contact Us", id: "Contact" },
+          ].map((item, index) => (
+            <button
+              key={index}
+              onClick={() => handleScroll(item.id)}
+              className="hover:text-purple-500 text-xl md:text-2xl lg:text-3xl my-1"
+            >
+              {item.name}
+            </button>
+          ))}
+        </nav>
+
+        {/* Social Media Icons - Responsive */}
+        <div className="flex flex-wrap justify-center space-x-4 mt-6">
+          {[
+            { icon: <FaWhatsapp />, link: "https://wa.me/923260382216" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shoaib-ul-hassan-070ab333b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+            { icon: <FaGithub />, link: "https://github.com/shoaib5124/Reactjs-Portfolio.git" }, 
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl md:text-2xl lg:text-3xl hover:text-purple-500 transition-transform transform hover:scale-110"
+            >
+              {item.icon}
+            </a>
+          ))}
+        </div>
+
+        {/* Copyright Text */}
+        <p className="text-xl md:text-2xl text-gray-400 mt-6">
+          © 2025 Tarun Kaushik. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

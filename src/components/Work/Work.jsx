@@ -19,7 +19,7 @@ const Work = () => {
     <>
       <section
       id='work'
-      className='bg-skills-gradient clip-path-custom py-24 pb-24 z-[999]'
+      className='bg-skills-gradient clip-path-custom pt-24 pb-36 z-[999]'
       >
           <Container>
             <div className='text-center '>
@@ -37,7 +37,7 @@ const Work = () => {
               </div>
 
               {/* Prjects Grid */}
-              <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+              <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10'>
                 {projects.map((project)=>(
                   <div
                   id={project.id}

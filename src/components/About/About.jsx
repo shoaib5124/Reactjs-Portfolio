@@ -47,10 +47,10 @@ const About = () => {
                 href=''
                 target='_blank'
                 rel='noopener noreferer'
-                className='text-lg inline-block rounded-full py-3 mt-8 font-bold transition duration-300 transform hover:scale-105 px-8'
+                className='text-lg inline-block rounded-full py-3 mt-10 font-bold transition duration-300 transform hover:scale-105 px-8'
                 style={{
                   background:'linear-gradient(90deg,#8245ec,#a855f7)',
-                  boxShadow:' 0 0 2px #8245ec, 0 0 2px #a855f7, 0 0 40px #8245ec '
+                  boxShadow:' 0 0 1px #8245ec, 0 0 1px #a855f7, 0 0 20px #8245ec '
                 }}
                 >
                  DOWNLOAD CV

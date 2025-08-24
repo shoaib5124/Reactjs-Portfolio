@@ -51,7 +51,7 @@ const Experience = () => {
   return (      
     <section
     id='education'
-    className='py-24 pb-24 bg-skills-gradient clip-path-custom-2'
+    className='pt-24 pb-36 bg-skills-gradient clip-path-custom-2'
     >
       <Container>
          <div className='text-center'>
@@ -64,7 +64,7 @@ const Experience = () => {
           <p 
            className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 my-8'
           >
-           My education has been a journey of learning and development.
+          My education has been a journey of learning and development.
            Here are the details of my academic background 
           </p>
          </div>

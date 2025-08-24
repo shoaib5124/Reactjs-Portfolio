@@ -23,7 +23,7 @@ const Skills = () => {
            From front-end design to backend logic, each skill helps me craft engaging, reliable digital experiences.
           </p>
        </div>
-       <div className=' flex flex-wrap justify-between'>
+       <div className=' flex flex-wrap justify-between pt-10'>
           {SkillsInfo.map((category)=>(
             <div 
                 key={category.title}
