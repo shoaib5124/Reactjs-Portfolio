@@ -51,7 +51,7 @@ const Experience = () => {
   return (      
     <section
     id='education'
-    className='pt-24 pb-36 bg-skills-gradient clip-path-custom-2'
+    className='mt-36 pb-36 bg-skills-gradient clip-path-custom-2'
     >
       <Container>
          <div className='text-center'>
