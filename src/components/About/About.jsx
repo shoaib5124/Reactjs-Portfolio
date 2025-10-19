@@ -27,7 +27,7 @@ const About = () => {
                         words={[
                             'React. js Developer',
                             'Frontend web Developer',
-                            'Javascript Enthusiast',
+                            'Mern Stack Developer',
                             'Responsive Design Expert'
                         ]}
                         loop={0}
@@ -40,7 +40,7 @@ const About = () => {
                 </h3>
                 {/* About me paragraph */}
                 <p className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 mt-8'>
-                  I’m a passionate front-end developer with 2 years of experience creating clean, user-friendly websites. Skilled in React.js, Tailwind CSS, and modern JavaScript, I transform ideas into interactive digital experiences. I love learning, solving challenges, and building projects that make an impact about both visual appeal and functionality.
+                  I’m a passionate Mern Stack Developer with 1.5 years of experience creating clean, user-friendly websites. Skilled in React.js, Tailwind CSS,Bootstrap,Node.js,Express.js,python,FastApi and modern JavaScript, I transform ideas into interactive digital experiences. I love learning, solving challenges, and building projects that make an impact about both visual appeal and functionality.
                 </p>
                 {/* Resume Button */}
                 <a 
