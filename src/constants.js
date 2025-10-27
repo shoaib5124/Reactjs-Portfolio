@@ -14,7 +14,7 @@ import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
-import mysqlLogo from './assets/tech_logo/mysql.png';
+import FastAPIlogo from './assets/tech_logo/fastapi.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
 import cLogo from './assets/tech_logo/c.png';
@@ -44,8 +44,8 @@ import bsaLogo from './assets/education_logo/bsa_logo.png';
 import vpsLogo from './assets/education_logo/vps_logo.png';
 
 // Project Section Logo's
-import githubdetLogo from './assets/work_logoe/github_det.png';
-import csprepLogo from './assets/work_logoe/cs_prep.png';
+import password_generaterlogo from './assets/work_logoe/passwordlogo.png';
+import uniLogo from './assets/work_logoe/uni_logo.png';
 import movierecLogo from './assets/work_logoe/movie_rec.png';
 import taskremLogo from './assets/work_logoe/task_rem.png';
 import npmLogo from './assets/work_logoe/npm.png';
@@ -64,11 +64,11 @@ export const SkillsInfo = [
       { name: 'SASS', logo: sassLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
-      { name: 'Angular', logo: angularLogo },
+      // { name: 'Angular', logo: angularLogo },
       { name: 'Redux', logo: reduxLogo },
-      { name: 'Next JS', logo: nextjsLogo },
+      // { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'GSAP', logo: gsapLogo },
+      // { name: 'GSAP', logo: gsapLogo },
       { name: 'Material UI', logo: materialuiLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
     ],
@@ -76,23 +76,19 @@ export const SkillsInfo = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Springboot', logo: springbootLogo },
+      { name: 'Python', logo: pythonLogo },
+      { name: 'FastAPI', logo: FastAPIlogo }, 
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Firebase', logo: firebaseLogo },
-      { name: 'PostgreSQL', logo: postgreLogo },
+      { name: 'Javascript', logo: javascriptLogo },
+      // { name: 'PostgreSQL', logo: postgreLogo },
     ],
   },
   {
     title: 'Languages',
     skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'TypeScript', logo: typescriptLogo },
     ],
@@ -136,7 +132,7 @@ export const experiences = [
   {  
     id: 1,  
     img: codeLogo,  
-    role: "Problem Solver & Backend Learner",  
+    role: "Python Backend Developer (Learning Projects)",  
     company: "Self Learning",  
     date: "2024",  
     points: [  
@@ -218,92 +214,42 @@ export const experiences = [
   export const projects = [
     {
       id: 0,
-      title: "GitHub Profile Detective",
+      title: "Password Generator",
       description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: githubdetLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-      webapp: "https://githubprofiledetective.netlify.app/",
+        "A React-based Password Generator App that lets you create strong, secure, and random passwords instantly. You can customize password length and choose which character types (uppercase, lowercase, numbers, and symbols) to include.",
+      image:  password_generaterlogo,
+      tags: ["HTML", "CSS", "JavaScript", "React JS",],
+      github: "https://github.com/shoaib5124/password_generater.git",
+      webapp: "https://password-generater-rho.vercel.app/",
     },
     {
       id: 1,
-      title: "CS Prep",
+      title: "University Website",
       description:
-        "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-      image: csprepLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/CSPrep",
-      webapp: "https://csprep.netlify.app/",
+        "A modern and fully responsive University Website built using React.js and Tailwind CSS. It presents educational programs, an overview of the university, and key sections like About, Programs, and Gallery all designed with a clean and professional look.",
+      image: uniLogo,
+      tags: ["React JS", "Tailwindcss", "HTML", "JavaScript"],
+      github: "https://github.com/shoaib5124/educaton-website.git",
+      webapp: "https://educaton-website-dl6a-ggo4y4jts-shoaibulhassans-projects.vercel.app/",
     },
     {
       id: 2,
-      title: "Movie Recommendation App",
+      title: "PDF Reader ",
       description:
-        "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-      image: movierecLogo,
-      tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
+        "A FastAPI-based backend project that enables users to upload PDF files, extract text using pdftotext, and interact with the content through a simulated LLM. Demonstrates CRUD operations, modular routing, and key FastAPI concepts like path/query parameters, file uploads, and error handling.",
+      image: FastAPIlogo,
+      tags: ["Python", "FastAPI", "REST API", "File Handling", "OOP"],
+      github: "https://github.com/shoaib5124/Pdf_Reader",
+},
     {
       id: 3,
-      title: "Email Validator NPM Package",
+      title: "Bug Tracker ",
       description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: npmLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-    },
-    {
-      id: 4,
-      title: "Task Reminder Chrome Extension Tool",
-      description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-      image: taskremLogo,
-      tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-      github: "https://github.com/codingmastr/Task-Reminder-Tool",
-      webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-    },
-    {
-      id: 5,
-      title: "Webverse Digital",
-      description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: cmLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "https://codingmasterweb.in/",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Image Search App",
-      description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-      image: imagesearchLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
+        "A beginner friendly CLI Bug Tracker app built using Python, with JSON storage and logging features.It helps you to log, view, update, search and delete issues.This program is capable of logging and storing your all actions in a JSON file for persistent tracking.",
+      image: FastAPIlogo,
+      tags: ["Python", "FastAPI", "REST API", "File Handling","logging", "OOP"],
+      github: "https://github.com/shoaib5124/Bug_tracker",
+},
+
+ 
   ];  

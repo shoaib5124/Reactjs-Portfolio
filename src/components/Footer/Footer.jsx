@@ -14,10 +14,10 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className=" mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-500">Shoaib Ul Hassan</h2>
+        <h2 className="text-2xl lg:text-2xl xl:text-4xl font-semibold text-purple-500">Shoaib Ul Hassan</h2>
 
         {/* Navigation Links - Responsive */}
-        <nav className="flex flex-col md:flex-wrap justify-center sm:space-x-6 mt-4 text-xl">
+        <nav className="flex flex-col md:flex-row justify-center sm:space-x-6 mt-4 text-xl">
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },

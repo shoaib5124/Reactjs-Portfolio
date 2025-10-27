@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className='text-white  px-10 w-full max-w-7xl md:mx-auto flex py-5 justify-between items-center'>
 
           {/* Logo */}
-          <div className='text-xl md:text-2xl lg:text-3xl font-semibold lg:font-bold'>
+          <div className='text-xl  md:text-2xl font-semibold lg:font-bold'>
             <span className='text-[#8245ec]'>&lt;</span>
             <span className='text-white'>Shoaib</span>
             <span className='text-[#8245ec]'>/</span>
@@ -78,7 +78,7 @@ const Navbar = () => {
           </div>
 
           {/* Deskstop Menu */}
-          <ul className='hidden md:flex md:text-base lg:text-2xl font-medium space-x-8 text-gray-300'>
+          <ul className='hidden lg:flex text-xl xl:text-2xl font-medium space-x-8 text-gray-300'>
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -94,9 +94,9 @@ const Navbar = () => {
           </ul>
 
           {/* Social Icons */}
-          <div className='hidden md:flex space-x-4'>
+          <div className='hidden lg:flex space-x-4'>
             <a
-              href='https://github.com/shoaib5124/Reactjs-Portfolio.git'
+              href='https://github.com/shoaib5124'
               target='_blank'
               rel='noopener noreferer'
               className='text-gray-300 hover:text-[#8245ec]'
@@ -104,7 +104,7 @@ const Navbar = () => {
               <FaGithub size={26} />
             </a>
             <a
-              href='https://www.linkedin.com/in/shoaib-ul-hassan-070ab333b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+              href='www.linkedin.com/in/shoaib-ul-hassan'
               target='_blank'
               rel='noopener noreferer'
               className='text-gray-300 hover:text-[#8245ec]'
@@ -115,7 +115,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu icons */}
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
           {isOpen ?(
               <FiX
                 className='text-3xl mt-5 mr-10 text-white cursor-pointer'
@@ -144,7 +144,7 @@ const Navbar = () => {
                     ))}
                     <div className="flex space-x-4">
                       <a
-                        href="https://github.com/codingmastr"
+                        href="https://github.com/shoaib5124"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 hover:text-white"
@@ -152,7 +152,7 @@ const Navbar = () => {
                         <FaGithub size={24} />
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/shoaib-ul-hassan-070ab333b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        href="www.linkedin.com/in/shoaib-ul-hassan"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 hover:text-white"

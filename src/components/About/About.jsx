@@ -25,10 +25,10 @@ const About = () => {
             <span className='text-white'>I am a </span>
             <Typewriter
               words={[
-                'React. js Developer',
-                'Frontend web Developer',
-                'Mern Stack Developer',
-                'Responsive Design Expert'
+                 'React.js Developer',
+                 'MERN Stack Developer',
+                 'Python Backend Developer',
+                 'FastAPI Enthusiast',
               ]}
               loop={0}
               cursor
@@ -40,18 +40,17 @@ const About = () => {
           </h3>
           {/* About me paragraph */}
           <p className='text-base sm:text-lg md:text-lg lg:text-2xl text-gray-400 mt-8'>
-            I’m a passionate Mern Stack Developer
-             with 1.5 years of experience creating 
-             clean,user-friendly websites. Skilled in
-             React.js, Tailwind CSS,Bootstrap,Node.js,
-             Express.js,python,FastApi and modern JavaScript,
-             I transform ideas into interactive digital experiences.
-             I love learning, solving challenges, and building projects 
-             that make an impact about both visual appeal and functionality.
+          I’m a passionate Full-Stack Developer skilled in both MERN and Python ecosystems.
+          With 1.5 years of experience building responsive, user-friendly applications, 
+          I’ve developed real-world projects using React.js, Node.js, Express.js, 
+          and MongoDB, as well as Python and FastAPI for backend automation 
+          and API development.I love learning new technologies,
+          solving complex problems, and creating projects that
+          combine visual appeal with strong backend logic to deliver real impact.
           </p>
          {/* Resume Button */}
           <a
-            href=''
+            href='https://drive.google.com/file/d/1C6Bufmd5cmzvt-RuCJcQpJvkKVgU9VX8/view?usp=drivesdk'
             target='_blank'
             rel='noopener noreferer'
             className='text-lg inline-block rounded-full py-3 mt-10 font-bold transition duration-300 transform hover:scale-105 px-8'
