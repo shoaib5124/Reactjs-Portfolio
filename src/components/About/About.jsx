@@ -50,7 +50,8 @@ const About = () => {
           </p>
          {/* Resume Button */}
           <a
-            href='<a href="https://drive.google.com/uc?id=1L1Lf4acNH8BIzfquiwOUReg1qnisnR7Z&export=download">
+            href='<a "https://drive.google.com/uc?export=download&id=1LPoOINPxa774TqTeAqurq4HIGk0gkHwN1_oecZafCsY
+">
   Download CV
 </a>
 '
