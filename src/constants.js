@@ -46,7 +46,7 @@ import vpsLogo from './assets/education_logo/vps_logo.png';
 // Project Section Logo's
 import password_generaterlogo from './assets/work_logoe/passwordlogo.png';
 import uniLogo from './assets/work_logoe/uni_logo.png';
-import YouTubeCloneLogo from './assets/work_logoe/YouTubeLogo.png';
+import YouTubeCloneLogo from './assets/work_logoe/Youtube_logo.png';
 import WeatherAppLogo from './assets/work_logoe/weather.png';
 
 export const SkillsInfo = [
