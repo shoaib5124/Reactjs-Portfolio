@@ -46,14 +46,8 @@ import vpsLogo from './assets/education_logo/vps_logo.png';
 // Project Section Logo's
 import password_generaterlogo from './assets/work_logoe/passwordlogo.png';
 import uniLogo from './assets/work_logoe/uni_logo.png';
-import movierecLogo from './assets/work_logoe/movie_rec.png';
-import taskremLogo from './assets/work_logoe/task_rem.png';
-import npmLogo from './assets/work_logoe/npm.png';
-import webverLogo from './assets/work_logoe/web_dig.png';
-import cmLogo from './assets/work_logoe/cm.png';
-import imagesearchLogo from './assets/work_logoe/image_search.png';
-import removebgLogo from './assets/work_logoe/remove_bg.png';
-
+import YouTubeCloneLogo from './assets/work_logoe/YouTubeLogo.png'
+import WeatherAppLogo from './assets/work_logoe/weather.png'
 
 export const SkillsInfo = [
   {
@@ -245,11 +239,30 @@ export const experiences = [
       id: 3,
       title: "Bug Tracker ",
       description:
-        "A beginner friendly CLI Bug Tracker app built using Python, with JSON storage and logging features.It helps you to log, view, update, search and delete issues.This program is capable of logging and storing your all actions in a JSON file for persistent tracking.",
+        "A beginner friendly CLI Bug Tracker app built using Python, with JSON storage and logging features.It helps you to log, view, update, search and delete issues.This program is capable of logging and storing your all actions in a JSON file for persistent tracking.Run Locally only",
       image: FastAPIlogo,
       tags: ["Python", "FastAPI", "REST API", "File Handling","logging", "OOP"],
       github: "https://github.com/shoaib5124/Bug_tracker",
 },
+      {
+        id: 4,
+        title: "YouTube Clone",
+        description:
+          "A full-stack YouTube Clone built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This app allows users to upload videos, like/dislike content, comment, subscribe to channels, and manage their profile. Features include JWT authentication, Cloudinary integration for video and image storage, and a fully responsive frontend.",
+        image: YouTubeCloneLogo,
+        tags: ["MERN", "React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
+        github: "https://github.com/shoaib5124/youtubeclone-frontend",
+      },
+        {
+          id: 5,
+          title: "Weather App",
+          description:
+            "A real-time weather application built with React.js for the frontend and a Node.js/Express backend. Users can search for any city and get live weather data including temperature, humidity, wind speed, and weather conditions. The backend fetches data from the OpenWeatherMap API, and CORS is configured for local development.",
+          image: WeatherAppLogo, 
+          tags: ["React.js", "Node.js", "Express.js", "API", "OpenWeatherMap", "Frontend", "Backend"],
+          github: "https://github.com/shoaib5124/weatherApp",
+        }
+
 
  
   ];  

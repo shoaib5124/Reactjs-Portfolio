@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-xl md:text-2xl text-gray-400 mt-6">
-          © 2025 Tarun Kaushik. All rights reserved.
+          © 2025 Shoaib Ul Hassan. All rights reserved.
         </p>
       </div>
     </footer>
