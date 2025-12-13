@@ -49,21 +49,19 @@ const About = () => {
           combine visual appeal with strong backend logic to deliver real impact.
           </p>
          {/* Resume Button */}
-          <a
-            href='<a "https://docs.google.com/document/d/1LPoOINPxa774TqTeAqurq4HIGk0gkHwN1_oecZafCsY/export?format=pdf">
-  Download CV
-</a>
-'
-            target='_blank'
-            rel='noopener noreferer'
-            className='text-lg inline-block rounded-full py-3 mt-10 font-bold transition duration-300 transform hover:scale-105 px-8'
+        <a
+            href="https://docs.google.com/document/d/1LPoOINPxa774TqTeAqurq4HIGk0gkHwN1_oecZafCsY/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg inline-block rounded-full py-3 mt-10 font-bold transition duration-300 transform hover:scale-105 px-8"
             style={{
               background: 'linear-gradient(90deg,#8245ec,#a855f7)',
-              boxShadow: ' 0 0 1px #8245ec, 0 0 1px #a855f7, 0 0 20px #8245ec '
+              boxShadow: '0 0 10px #8245ec, 0 0 20px #a855f7'
             }}
           >
-            DOWNLOAD CV
-          </a>
+  View CV
+</a>
+
         </div>
         {/* Right image side */}
         <div className='md:w-1/2 flex justify-center md:justify-end '>
